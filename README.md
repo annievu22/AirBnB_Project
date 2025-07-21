@@ -91,10 +91,10 @@ To create a **user-friendly, interactive dashboard** that:
 
 ### 5.4. Business Impact & Insights
 
-- 📌 **Market Focus**: Manhattan and Brooklyn should remain key focus areas for Airbnb growth.
-- 📉 **Review Drop Analysis**: Post-2020 decline in reviews indicates sensitivity to global events (e.g., COVID-19).
-- 🧭 **User Targeting**: Data can support host recommendations and neighborhood-based promotion strategies.
-- 💡 **Pricing Strategy**: Dynamic pricing models can be fine-tuned based on room type, location, and time of year.
+- **Market Focus**: Manhattan and Brooklyn should remain key focus areas for Airbnb growth.
+- **Review Drop Analysis**: Post-2020 decline in reviews indicates sensitivity to global events (e.g., COVID-19).
+- **User Targeting**: Data can support host recommendations and neighborhood-based promotion strategies.
+- **Pricing Strategy**: Dynamic pricing models can be fine-tuned based on room type, location, and time of year.
 
 ---
 
