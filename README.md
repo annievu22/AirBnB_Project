@@ -72,6 +72,11 @@ This project explores Airbnb’s listing data using Python and Tableau to delive
 
 🔗 [View Full Dashboard on Tableau Public](https://public.tableau.com/views/AirBnBProject_17531229773270/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+Below is a snapshot of the Tableau dashboard created for this analysis:
+
+![Airbnb Tableau Dashboard](https://raw.githubusercontent.com/annievu22/AirBnB_Project/main/AirBnB%20Project%20-%20Tableau%20Snapshot.png)
+
+
 - **Distribution of Room Types**: Entire home/apt and private rooms dominate  
 - **Neighborhood Trends**: Manhattan and Brooklyn account for over 80% of listings  
 - **Price Heatmap**: Average prices vary slightly across boroughs  
