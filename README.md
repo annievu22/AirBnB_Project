@@ -19,7 +19,19 @@ This project explores Airbnb’s listing data using Python and Tableau to delive
 
 ---
 
-## 📂 3. Dataset Description
+## 🧰 3. Tech Stack
+
+The dashboard was built using the following tools and technologies:
+
+- 📊 **Tableau Public** – Primary platform for building and sharing the interactive dashboard.
+- 🧹 **Python (pandas, matplotlib, seaborn)** – Used for data cleaning, transformation, and exploratory data analysis before loading into Tableau.
+- 📋 **CSV Format** – Cleaned dataset exported from Python and used as Tableau data source.
+- 🗃️ **Calculated Fields & Filters** – Applied in Tableau to dynamically break down pricing, reviews, and room types by region and room category.
+- 📁 **Export Format** – .png for snapshot previews, and Tableau Public link for full interactivity.
+
+---
+
+## 📂 4. Dataset Description
 
 - **Source**: Airbnb Open Data  
 - **Size**: 100,000+ rows, 26 columns  
@@ -27,7 +39,61 @@ This project explores Airbnb’s listing data using Python and Tableau to delive
 
 ---
 
-## 🧱 4. Data Schema
+## ✨ 5. Features / Highlights
+
+### • Business Problem
+
+With over 100,000 Airbnb listings in NYC alone, users and hosts alike struggle to understand how room type, neighborhood, and seasonality affect pricing and performance. Business users also need to spot underserved regions or property types to optimize offerings.
+
+> **Key questions** included:  
+> - Where are listings concentrated?  
+> - How does pricing vary by room type and borough?  
+> - What time periods have higher user engagement?
+
+---
+
+### • Goal of the Dashboard
+
+To create a **user-friendly, interactive dashboard** that:
+
+- Enables users to explore trends in Airbnb listings across New York City
+- Supports data-driven decisions in pricing strategy, marketing, and host targeting
+- Helps uncover patterns in neighborhood performance and review volume
+
+---
+
+### • Walkthrough of Key Visuals
+
+- 🔢 **Key Metrics (Top Cards)**  
+  Total Listings, Total Reviews, Avg. Price, Available Days/Year
+
+- 🗺️ **Map of Listings by Neighborhood**  
+  Interactive map showing listing density across NYC boroughs
+
+- 🏠 **Room Type Breakdown**  
+  Bar chart comparing counts of entire homes, private rooms, shared rooms, etc.
+
+- 💰 **Price Distribution**  
+  Histogram visualizing price variability across all listings
+
+- 📍 **Listings by Borough (Bar Chart)**  
+  Highlights dominance of Manhattan and Brooklyn in total listings
+
+- 📈 **Review Trends Over Time (Line Chart)**  
+  Tracks changes in review volume to capture seasonality and market shifts
+
+---
+
+### • Business Impact & Insights
+
+- 📌 **Market Focus**: Manhattan and Brooklyn should remain key focus areas for Airbnb growth.
+- 📉 **Review Drop Analysis**: Post-2020 decline in reviews indicates sensitivity to global events (e.g., COVID-19).
+- 🧭 **User Targeting**: Data can support host recommendations and neighborhood-based promotion strategies.
+- 💡 **Pricing Strategy**: Dynamic pricing models can be fine-tuned based on room type, location, and time of year.
+
+---
+
+## 🧱 6. Data Schema
 
 | Category              | Columns (examples)                                  |
 |----------------------|------------------------------------------------------|
@@ -38,7 +104,7 @@ This project explores Airbnb’s listing data using Python and Tableau to delive
 
 ---
 
-## 🧹 5. Data Cleaning & Preparation (Python)
+## 🧹 7. Data Cleaning & Preparation (Python)
 
 - Removed missing and duplicate records  
 - Converted columns to correct data types (`price`, `last review`)  
@@ -50,7 +116,7 @@ This project explores Airbnb’s listing data using Python and Tableau to delive
 
 ---
 
-## 📌 6. Key Business Questions
+## 📌 8. Key Business Questions
 
 - 📈 What is the distribution of listing prices?
 - 🏠 How are different room types distributed?
@@ -60,7 +126,7 @@ This project explores Airbnb’s listing data using Python and Tableau to delive
 
 ---
 
-## 🧠 7. Methodology & Tools
+## 🧠 9. Methodology & Tools
 
 - **Python (pandas, seaborn, matplotlib)** for data cleaning and EDA  
 - **Tableau** for interactive dashboards and visualization  
@@ -68,43 +134,18 @@ This project explores Airbnb’s listing data using Python and Tableau to delive
 
 ---
 
-## 📊 8. Visualizations & Dashboard Highlights (Tableau)
+## 📊 10. Visualizations & Dashboard Highlights
 
 🔗 [View Full Dashboard on Tableau Public](https://public.tableau.com/views/AirBnBProject_17531229773270/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-Below is a snapshot of the Tableau dashboard created for this analysis:
+### 📸 Dashboard Snapshot
+
+Below is a snapshot of the Tableau dashboard:
 
 ![Airbnb Tableau Dashboard](https://raw.githubusercontent.com/annievu22/AirBnB_Project/main/AirBnB%20Project%20-%20Tableau%20Snapshot.png)
 
-
-- **Distribution of Room Types**: Entire home/apt and private rooms dominate  
-- **Neighborhood Trends**: Manhattan and Brooklyn account for over 80% of listings  
-- **Price Heatmap**: Average prices vary slightly across boroughs  
-- **Review Trends Over Time**: Sharp decline post-2020 likely due to pandemic  
-- **Top Hosts Analysis**: Ranking by total reviews per neighborhood  
-
 ---
 
-## 💡 9. Insights & Recommendations
-
-- 🏙️ Focus marketing on Brooklyn & Manhattan where demand is highest  
-- 💲 Encourage hosts with private/shared rooms to adopt dynamic pricing strategies  
-- 📅 Seasonal spikes in bookings (May–July) can inform promotional timing  
-- 🤖 Airbnb should continue leveraging AI to match users with listings based on past preferences and review behavior
-
----
-
-## ✅ 10. Final Conclusion
+## ✅ 11. Final Conclusion
 
 This project demonstrates how combining Python-based EDA and Tableau dashboards can drive business understanding in the short-term rental market. The insights derived from the NYC dataset can inform pricing, product offerings, and platform strategies for Airbnb.
-
----
-
-## 🛠️ 11. Tools & Technologies
-
-| Tool       | Purpose                         |
-|------------|---------------------------------|
-| Python     | Data cleaning & analysis        |
-| Pandas     | Data manipulation               |
-| Seaborn    | Visualizations                  |
-| Tableau    | Dashboards & storytelling       |
