@@ -4,13 +4,13 @@
 
 ---
 
-## 🔍 1. Overview
+## 1. Overview
 
 This project explores Airbnb’s listing data using Python and Tableau to deliver actionable business insights. The analysis focuses on room types, listing prices, neighborhood patterns, and customer engagement through reviews. It is motivated by Airbnb’s growing adoption of data and AI to enhance the customer experience, reduce host complaints, and optimize listing performance.
 
 ---
 
-## 🎯 2. Business Objectives
+## 2. Business Objectives
 
 - Analyze pricing dynamics and their relation to room types.
 - Understand the geographic distribution of listings and reviews.
@@ -19,19 +19,19 @@ This project explores Airbnb’s listing data using Python and Tableau to delive
 
 ---
 
-## 🧰 3. Tech Stack
+## 3. Tech Stack
 
 The dashboard was built using the following tools and technologies:
 
-- 📊 **Tableau Public** – Primary platform for building and sharing the interactive dashboard.
-- 🧹 **Python (pandas, matplotlib, seaborn)** – Used for data cleaning, transformation, and exploratory data analysis before loading into Tableau.
-- 📋 **CSV Format** – Cleaned dataset exported from Python and used as Tableau data source.
-- 🗃️ **Calculated Fields & Filters** – Applied in Tableau to dynamically break down pricing, reviews, and room types by region and room category.
-- 📁 **Export Format** – .png for snapshot previews, and Tableau Public link for full interactivity.
+- **Tableau Public** – Primary platform for building and sharing the interactive dashboard.
+- **Python (pandas, matplotlib, seaborn)** – Used for data cleaning, transformation, and exploratory data analysis before loading into Tableau.
+- **CSV Format** – Cleaned dataset exported from Python and used as Tableau data source.
+- **Calculated Fields & Filters** – Applied in Tableau to dynamically break down pricing, reviews, and room types by region and room category.
+- **Export Format** – .png for snapshot previews, and Tableau Public link for full interactivity.
 
 ---
 
-## 📂 4. Dataset Description
+## 4. Dataset Description
 
 - **Source**: Airbnb Open Data  
 - **Size**: 100,000+ rows, 26 columns  
@@ -39,9 +39,9 @@ The dashboard was built using the following tools and technologies:
 
 ---
 
-## ✨ 5. Features / Highlights
+## 5. Features / Highlights
 
-### • Business Problem
+### 5.1. Business Problem
 
 With over 100,000 Airbnb listings in NYC alone, users and hosts alike struggle to understand how room type, neighborhood, and seasonality affect pricing and performance. Business users also need to spot underserved regions or property types to optimize offerings.
 
@@ -49,10 +49,15 @@ With over 100,000 Airbnb listings in NYC alone, users and hosts alike struggle t
 > - Where are listings concentrated?  
 > - How does pricing vary by room type and borough?  
 > - What time periods have higher user engagement?
+> - What is the distribution of listing prices?
+> - How are different room types distributed?
+> - How are listings distributed across different neighborhoods?
+> - What is the relationship between price and room type?
+> - How has the number of reviews changed over time?
 
 ---
 
-### • Goal of the Dashboard
+### 5.2. Goal of the Dashboard
 
 To create a **user-friendly, interactive dashboard** that:
 
@@ -62,29 +67,29 @@ To create a **user-friendly, interactive dashboard** that:
 
 ---
 
-### • Walkthrough of Key Visuals
+### 5.3. Walkthrough of Key Visuals
 
-- 🔢 **Key Metrics (Top Cards)**  
+- **Key Metrics (Top Cards)**  
   Total Listings, Total Reviews, Avg. Price, Available Days/Year
 
-- 🗺️ **Map of Listings by Neighborhood**  
+- **Map of Listings by Neighborhood**  
   Interactive map showing listing density across NYC boroughs
 
-- 🏠 **Room Type Breakdown**  
+- **Room Type Breakdown**  
   Bar chart comparing counts of entire homes, private rooms, shared rooms, etc.
 
-- 💰 **Price Distribution**  
+- **Price Distribution**  
   Histogram visualizing price variability across all listings
 
-- 📍 **Listings by Borough (Bar Chart)**  
+- **Listings by Borough (Bar Chart)**  
   Highlights dominance of Manhattan and Brooklyn in total listings
 
-- 📈 **Review Trends Over Time (Line Chart)**  
+- **Review Trends Over Time (Line Chart)**  
   Tracks changes in review volume to capture seasonality and market shifts
 
 ---
 
-### • Business Impact & Insights
+### 5.4. Business Impact & Insights
 
 - 📌 **Market Focus**: Manhattan and Brooklyn should remain key focus areas for Airbnb growth.
 - 📉 **Review Drop Analysis**: Post-2020 decline in reviews indicates sensitivity to global events (e.g., COVID-19).
@@ -93,7 +98,7 @@ To create a **user-friendly, interactive dashboard** that:
 
 ---
 
-## 🧱 6. Data Schema
+## 6. Data Schema
 
 | Category              | Columns (examples)                                  |
 |----------------------|------------------------------------------------------|
@@ -104,7 +109,7 @@ To create a **user-friendly, interactive dashboard** that:
 
 ---
 
-## 🧹 7. Data Cleaning & Preparation (Python)
+## 7. Data Cleaning & Preparation (Python)
 
 - Removed missing and duplicate records  
 - Converted columns to correct data types (`price`, `last review`)  
@@ -116,17 +121,7 @@ To create a **user-friendly, interactive dashboard** that:
 
 ---
 
-## 📌 8. Key Business Questions
-
-- 📈 What is the distribution of listing prices?
-- 🏠 How are different room types distributed?
-- 📍 How are listings distributed across different neighborhoods?
-- 💰 What is the relationship between price and room type?
-- 🗓️ How has the number of reviews changed over time?
-
----
-
-## 🧠 9. Methodology & Tools
+## 8. Methodology & Tools
 
 - **Python (pandas, seaborn, matplotlib)** for data cleaning and EDA  
 - **Tableau** for interactive dashboards and visualization  
@@ -134,11 +129,11 @@ To create a **user-friendly, interactive dashboard** that:
 
 ---
 
-## 📊 10. Visualizations & Dashboard Highlights
+## 9. Visualizations & Dashboard Highlights
 
 🔗 [View Full Dashboard on Tableau Public](https://public.tableau.com/views/AirBnBProject_17531229773270/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-### 📸 Dashboard Snapshot
+### Dashboard Snapshot
 
 Below is a snapshot of the Tableau dashboard:
 
@@ -146,7 +141,7 @@ Below is a snapshot of the Tableau dashboard:
 
 ---
 
-## ✅ 11. Final Conclusion
+## 10. Final Conclusion
 
 This project illustrates the power of combining data analytics and interactive visualization to derive meaningful insights from large-scale marketplace data. By cleaning and analyzing over 100,000 Airbnb listings in New York City, I was able to uncover valuable trends in pricing, room types, and geographic distribution that directly inform platform strategy and host decision-making.
 
