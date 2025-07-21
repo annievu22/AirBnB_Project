@@ -23,7 +23,7 @@ This project explores Airbnb’s listing data using Python and Tableau to delive
 
 The dashboard was built using the following tools and technologies:
 
-- **Tableau Public** – Primary platform for building and sharing the interactive dashboard.
+- Tableau Public – Primary platform for building and sharing the interactive dashboard.
 - **Python (pandas, matplotlib, seaborn)** – Used for data cleaning, transformation, and exploratory data analysis before loading into Tableau.
 - **CSV Format** – Cleaned dataset exported from Python and used as Tableau data source.
 - **Calculated Fields & Filters** – Applied in Tableau to dynamically break down pricing, reviews, and room types by region and room category.
