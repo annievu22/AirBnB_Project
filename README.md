@@ -46,7 +46,7 @@ This project explores Airbnb’s listing data using Python and Tableau to delive
 - Dropped irrelevant columns: `license`, `house_rules`  
 - Final cleaned dataset: **101,410 rows × 24 columns**  
 
-📄 *See code in: `Air Bnb data analysis project.pdf`*
+📄 [See Python Code (PDF)](https://drive.google.com/file/d/1K_wCub1eE6EHkVIU7qjzTXVN8TXEfmFG/view?usp=sharing)
 
 ---
 
@@ -70,7 +70,7 @@ This project explores Airbnb’s listing data using Python and Tableau to delive
 
 ## 📊 8. Visualizations & Dashboard Highlights (Tableau)
 
-> 📷 *See screenshots in `/images/` folder or below:*
+🔗 [View Full Dashboard on Tableau Public](https://public.tableau.com/views/AirBnBProject_17531229773270/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 - **Distribution of Room Types**: Entire home/apt and private rooms dominate  
 - **Neighborhood Trends**: Manhattan and Brooklyn account for over 80% of listings  
@@ -103,9 +103,3 @@ This project demonstrates how combining Python-based EDA and Tableau dashboards 
 | Pandas     | Data manipulation               |
 | Seaborn    | Visualizations                  |
 | Tableau    | Dashboards & storytelling       |
-| GitHub     | Project version control         |
-
----
-
-## 📁 12. Repository Structure
-
