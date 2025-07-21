@@ -129,7 +129,7 @@ To create a **user-friendly, interactive dashboard** that:
 
 ---
 
-## 9. Visualizations & Dashboard Highlights
+## 9. Tableau Dashboard
 
 🔗 [View Full Dashboard on Tableau Public](https://public.tableau.com/views/AirBnBProject_17531229773270/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
