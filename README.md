@@ -112,7 +112,7 @@ c. **Advanced SQL Logic:**
 
 d. **Visualization Design:**
    - Developed a Tableau dashboard focused on key metrics like price, reviews, availability, and distribution
-   - Enabled borough-level filters to help users explore local market trends
+   - Added filters by borough so users can easily explore trends in each area of NYC.
    - Dashboard hosted on [Tableau Public](https://public.tableau.com/views/AirBnBProject_17531229773270/Dashboard1)
 
 > These steps created a comprehensive view of Airbnb’s NYC market, allowing for performance benchmarking and targeted improvements.
