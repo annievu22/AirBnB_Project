@@ -207,7 +207,7 @@ Key business insights include:
 - Shared and private rooms cater to budget-conscious travelers, especially outside Manhattan  
 - Availability data can inform seasonal pricing strategies or operational improvements
 
-This end-to-end pipeline—from SQL data prep to Tableau visualization—provides a model for understanding platform-based marketplaces and supports smarter hosting, pricing, and planning strategies.
+This end-to-end pipeline, from SQL data prep to Tableau visualization, provides a model for understanding platform-based marketplaces and supports smarter hosting, pricing, and planning strategies.
 
 In future work, this project can be enhanced by:
 - Adding time series of bookings to study trends over time  
