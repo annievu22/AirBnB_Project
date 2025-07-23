@@ -1,6 +1,6 @@
 # 🏠 Airbnb NYC Data Analytics Project
 ![Python](https://img.shields.io/badge/Language-Python-purple)
-![Tableau](https://img.shields.io/badge/Visualization-Tableau-orange)
+![Tableau](https://img.shields.io/badge/Visualization-Tableau-pink)
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 ![Data](https://img.shields.io/badge/Data-Airbnb‒NYC-red)
 
