@@ -119,7 +119,7 @@ d. **Visualization Design:**
 
 ---
 
-## 5. SQL Data Preparation & Analytical Workflow
+## 5. SQL Code & Exploratory Data Analysis (EDA) 
 
 This section documents how SQL was used to clean and analyze the data prior to dashboard creation.
 
