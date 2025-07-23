@@ -31,29 +31,27 @@ With over 100,000 listings, Airbnb hosts and users often struggle to understand 
 
 ### 2.2. Business Impact & Insights
 
-- Entire home/apt listings dominate in Manhattan and Brooklyn, commanding the highest prices  
-- Shared rooms and private rooms are more common in the Bronx and Queens, catering to budget travelers  
-- Review trends reflect seasonal surges, especially in summer months  
-- Some neighborhoods show high availability but lower review counts, signaling potential oversupply or visibility issues  
-- The dashboard helps hosts optimize pricing and helps users make informed booking decisions
+- Entire home/apt listings dominate in Manhattan and Brooklyn, commanding the highest prices.  
+- Shared rooms and private rooms are more common in the Bronx and Queens, catering to budget travelers.  
+- Review trends reflect seasonal surges, especially in summer months.  
+- Some neighborhoods show high availability but lower review counts, signaling potential oversupply or visibility issues.  
+- The dashboard helps hosts optimize pricing and helps users make informed booking decisions.
 
 ---
 
 ## 3. Data Sources & Schema
 
-The dataset was downloaded from Kaggle and imported into MySQL Workbench for querying and transformation. It contains over 48,000 Airbnb listings across the five boroughs of New York City.
+The dataset was downloaded from Kaggle and imported into Google Colab for transformation and analysis using Python. It contains over 48,000 Airbnb listings across the five boroughs of New York City.
 
 ### 🔗 Dataset Links
 
 - **Kaggle Source:**  
-  Open dataset published by Inside Airbnb, providing comprehensive listing and host details.  
   [🌐 View on Kaggle](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data)
 
-- **Download via Google Drive:**  
-  CSV file for direct access and analysis.  
+- **Google Drive Download:**  
   [📁 View Dataset (Google Drive)](https://drive.google.com/file/d/1XlNNEdb7O-8lRjbf29FlcZT9dKlozmR2/view?usp=sharing)
 
-### Table: `airbnb_nyc_2023`
+### 📝 Table: `airbnb_nyc_2023`
 
 | Column Name         | Description                                         |
 |---------------------|-----------------------------------------------------|
