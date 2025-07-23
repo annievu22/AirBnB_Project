@@ -61,7 +61,7 @@ The dataset was downloaded from Kaggle and imported into MySQL Workbench for que
   CSV file for direct access and analysis.  
   [📁 View Dataset (Google Drive)](https://drive.google.com/file/d/1XlNNEdb7O-8lRjbf29FlcZT9dKlozmR2/view?usp=sharing)
 
-### 3.1. Table: `airbnb_nyc_2023`
+### Table: `airbnb_nyc_2023`
 
 | Column Name         | Description                                         |
 |---------------------|-----------------------------------------------------|
