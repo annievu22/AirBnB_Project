@@ -29,15 +29,7 @@ With over 100,000 listings, Airbnb hosts and users often struggle to understand 
 > - How have reviews changed over time?
 > - What neighborhoods show strong performance or potential for growth?
 
-### 2.2. Goal of the Dashboard
-
-To deliver an interactive visual tool that:
-- Helps users and hosts compare pricing by room type and borough  
-- Reveals trends in reviews and listing availability over time  
-- Highlights underserved neighborhoods or property types  
-- Supports strategic decisions for property investments or platform improvements
-
-### 2.3. Business Impact & Insights
+### 2.2. Business Impact & Insights
 
 - Entire home/apt listings dominate in Manhattan and Brooklyn, commanding the highest prices  
 - Shared rooms and private rooms are more common in the Bronx and Queens, catering to budget travelers  
@@ -168,6 +160,8 @@ These Python-based EDA steps provided the foundational insights used to design t
 ---
 
 ## 6. Tableau Dashboard
+
+- This Tableau dashboard enables users to explore pricing, room type, and neighborhood availability patterns across NYC through dynamic filters and location-based visuals.
 
 🔗 [View Full Dashboard on Tableau Public](https://public.tableau.com/views/AirBnBProject_17531229773270/Dashboard1)
 
