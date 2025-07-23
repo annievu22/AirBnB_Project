@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 ![Data](https://img.shields.io/badge/Data-Airbnb‒NYC-red)
 
-> A data-driven analysis of Airbnb listings in New York City to uncover key insights in pricing, room types, and neighborhood trends, with the goal of improving platform strategy and user satisfaction.
+> A Python and Tableau analysis of NYC Airbnb data, revealing pricing dynamics, room type availability, and neighborhood performance, to improve platform strategy and user satisfaction.
 
 ---
 
