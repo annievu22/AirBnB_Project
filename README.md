@@ -72,92 +72,75 @@ The dataset was downloaded from Kaggle and imported into Google Colab for transf
 
 ---
 
-## 4. Teck Stack & Methodology
 
-### 4.1. Tech Stack
+## 4. Methodology – Python Analysis
 
-- **Python (pandas, matplotlib, seaborn):** For cleaning, transforming, and exploring the dataset
-- **Tableau Public:** For building an interactive dashboard highlighting pricing trends and geographic distributions
+This section outlines the end-to-end process of cleaning, transforming, and analyzing the NYC Airbnb dataset using Python. Each step laid the foundation for interactive Tableau visualizations.
 
-### 4.2. Methodology Overview
+### 4.1. Data Cleaning
 
-a. **Data Cleaning:**
-   - Converted string-based dates to proper `datetime` objects  
-   - Handled missing values in key columns (e.g., `reviews per month`, `last review`)  
-   - Cleaned monetary columns by stripping symbols and casting to float  
-   - Dropped columns with excessive null values and irrelevant features  
-   - Standardized inconsistent values and removed duplicate records
-
-b. **Initial Exploration:**
-   - Generated descriptive statistics to understand data ranges, averages, and distributions  
-   - Explored patterns in price, reviews, and availability using group-by logic and value counts
-
-c. **Insight Extraction:**
-   - Analyzed trends in room type pricing, geographic listing density, and host behavior  
-   - Identified top neighborhoods and availability patterns to guide dashboard metrics
-
-d. **Dashboard Development:**
-   - Designed an interactive Tableau dashboard with borough filters and key KPIs  
-   - Visualizations included price trends, listing counts, review volume, and availability distributions  
-   - Dashboard link: [View on Tableau Public](https://public.tableau.com/views/AirBnBProject_17531229773270/Dashboard1)
-
-> This end-to-end process enabled a structured analysis of NYC’s Airbnb market and provided actionable insights for hosts and platform strategists.
-
----
-
-## 5. Python Code & Exploratory Data Analysis (EDA)
-
-This section documents how Python was used to clean, transform, and analyze the data before dashboard creation.
-
-### 5.1. Data Cleaning
-
-- Removed listings with `price = 0` or missing critical values  
-- Converted `'last_review'` to `datetime` using `pd.to_datetime()`  
-- Replaced missing `'reviews per month'` with `0`  
-- Cleaned formatting for `price` and `service fee` by removing dollar signs and converting to numeric  
-- Standardized borough names (e.g., fixing typos like `'manhatan'`)  
-- Dropped duplicated records and irrelevant columns (`house_rules`, `license`)
+* **Converted `last review` to datetime format** → Enabled time-based filtering and recency insights.
 
 ```python
 df['last review'] = pd.to_datetime(df['last review'], errors='coerce')
+```
+
+* **Filled missing `reviews per month` with 0** → Avoided null-related distortions in review-based metrics.
+
+```python
 df['reviews per month'] = df['reviews per month'].fillna(0)
+```
+
+* **Cleaned `price` and `service fee` columns** → Removed dollar signs and casted to float for analysis.
+
+```python
 df['price'] = df['price'].replace('[\$,]', '', regex=True).astype(float)
 df['service fee'] = df['service fee'].replace('[\$,]', '', regex=True).astype(float)
+```
+
+* **Standardized categorical values (e.g., borough names)** → Fixed typos like `'manhatan'` for accurate grouping.
+
+```python
 df['neighbourhood group'] = df['neighbourhood group'].replace({'manhatan': 'Manhattan'})
+```
+
+* **Dropped duplicates and irrelevant columns** → Removed noisy features such as `license` and `house_rules`.
+
+```python
 df.drop_duplicates(inplace=True)
 ```
 
-### 5.2. Exploratory & Descriptive Analysis
+> These cleaning steps ensured data consistency, enabled reliable analysis, and supported visual design.
 
-- **Average Price by Room Type and Borough:**
+### 4.2. Exploratory Data Analysis (EDA)
 
-```python
-df.groupby(['neighbourhood group', 'room type'])['price'].mean().round(2).reset_index()
-```
-
-- **Top Neighborhoods by Review Count:**
-
-```python
-df.groupby('neighbourhood')['number of reviews'].sum().sort_values(ascending=False).head(10)
-```
-
-- **Room Type Distribution:**
+* **Room Type Distribution** → Assessed accommodation types across listings.
 
 ```python
 df['room type'].value_counts()
 ```
 
-- **Availability Distribution:**
+* **Average Price by Borough and Room Type** → Compared pricing patterns across areas.
+
+```python
+df.groupby(['neighbourhood group', 'room type'])['price'].mean().round(2).reset_index()
+```
+
+* **Top 10 Neighborhoods by Total Reviews** → Ranked areas by popularity and engagement.
+
+```python
+df.groupby('neighbourhood')['number of reviews'].sum().sort_values(ascending=False).head(10)
+```
+
+* **Availability Distribution** → Evaluated listing availability throughout the year.
 
 ```python
 df['availability 365'].value_counts().sort_index()
 ```
 
-These Python-based EDA steps provided the foundational insights used to design the final Tableau dashboard.
+> These insights informed key dashboard visuals related to demand, price competitiveness, and listing saturation.
 
----
-
-## 6. Tableau Dashboard
+### 4.3. Tableau Dashboard Design
 
 - This Tableau dashboard enables users to explore pricing, room type, and neighborhood availability patterns across NYC through dynamic filters and location-based visuals.
 
@@ -165,44 +148,44 @@ These Python-based EDA steps provided the foundational insights used to design t
 
 ### Dashboard Snapshot
 
-Below is a snapshot of the Tableau dashboard:
-
 ![Airbnb Tableau Dashboard](https://raw.githubusercontent.com/annievu22/AirBnB_Project/main/AirBnB%20Project%20-%20Tableau%20Snapshot.png)
 
 ### Walkthrough of Key Visuals:
 
-- **Borough Selector (Dropdown Filter):**  
+* **Borough Selector (Dropdown Filter):**  
   Filters all visuals to selected boroughs—Manhattan, Brooklyn, etc.
 
-- **Listing Count and Room Type Distribution:**  
+* **Listing Count and Room Type Distribution:**  
   Pie chart showing share of Entire Home, Private Room, and Shared Room.
 
-- **Average Price by Borough (Bar Chart):**  
+* **Average Price by Borough (Bar Chart):**  
   Ranks boroughs by average nightly price for all listings.
 
-- **Top Neighborhoods by Reviews (Horizontal Bar Chart):**  
+* **Top Neighborhoods by Reviews (Horizontal Bar Chart):**  
   Shows the neighborhoods with the most cumulative reviews.
 
-- **Price vs. Number of Reviews (Scatter Plot):**  
+* **Price vs. Number of Reviews (Scatter Plot):**  
   Highlights relationship between price and review volume for listings.
 
-- **Availability Histogram:**  
+* **Availability Histogram:**  
   Displays how many listings are available throughout the year (0–365 days).
 
 > These visuals allow users to identify patterns in pricing, availability, and demand, driving strategic decisions for both hosts and travelers.
 
 ---
-## 7. Final Conclusion
+
+## 5. Final Conclusion
 
 This project demonstrates how Airbnb data can be transformed through Python and visualized with Tableau to reveal valuable market insights. By exploring pricing patterns, review behaviors, and listing availability, we help users better understand how location and room type affect performance.
 
-Key business insights include:
+**Key business insights:**
+
 - Manhattan listings command higher prices but show mixed review volumes  
 - Brooklyn has a high number of affordable listings with steady demand  
 - Shared and private rooms cater to budget-conscious travelers, especially outside Manhattan  
 - Availability data can inform seasonal pricing strategies or operational improvements
 
-This end-to-end pipeline, from SQL data prep to Tableau visualization, provides a model for understanding platform-based marketplaces and supports smarter hosting, pricing, and planning strategies.
+**Future enhancement:**
 
 In future work, this project can be enhanced by:
 - Adding time series of bookings to study trends over time  
