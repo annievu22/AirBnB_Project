@@ -152,6 +152,8 @@ df['availability 365'].value_counts().sort_index()
 
 ![Airbnb Tableau Dashboard](https://raw.githubusercontent.com/annievu22/AirBnB_Project/main/AirBnB%20Project%20-%20Tableau%20Snapshot.png)
 
+---
+
 ### Walkthrough of Key Visuals:
 
 * **Borough Selector (Dropdown Filter):**  
