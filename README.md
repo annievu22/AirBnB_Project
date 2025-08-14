@@ -10,9 +10,7 @@
 
 ## 1. Overview
 
-This project analyzes New York City Airbnb listings using Python and Tableau to explore pricing strategies, room types, and geographic availability across boroughs. It aims to uncover trends that influence host performance, booking behavior, and neighborhood dynamics.
-
-Data cleaning and transformation were performed in Python, with exploratory statistics and pattern detection applied across key variables like price, reviews, and availability. Results were visualized in Tableau to assist users and hosts in making smarter booking and listing decisions.
+This project uses Python and Tableau to analyze NYC Airbnb listings, exploring pricing, room types, and availability across boroughs. Insights on price, reviews, and availability help guide smarter booking and hosting decisions.
 
 ---
 
@@ -73,7 +71,7 @@ The dataset was downloaded from Kaggle and imported into Google Colab for transf
 ---
 
 
-## 4. Methodology – Python Analysis
+## 4. Methodology & Python Analysis
 
 This section outlines the end-to-end process of cleaning, transforming, and analyzing the NYC Airbnb dataset using Python. Each step laid the foundation for interactive Tableau visualizations.
 
@@ -140,7 +138,7 @@ df['availability 365'].value_counts().sort_index()
 
 > These insights informed key dashboard visuals related to demand, price competitiveness, and listing saturation.
 
-### 4.3. Tableau Dashboard Design
+## 5. Tableau Dashboard Design
 
 - This Tableau dashboard enables users to explore pricing, room type, and neighborhood availability patterns across NYC through dynamic filters and location-based visuals.
 
