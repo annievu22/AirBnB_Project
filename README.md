@@ -140,6 +140,8 @@ df['availability 365'].value_counts().sort_index()
 
 > These insights informed key dashboard visuals related to demand, price competitiveness, and listing saturation.
 
+---
+
 ## 5. Tableau Dashboard Design
 
 - This Tableau dashboard enables users to explore pricing, room type, and neighborhood availability patterns across NYC through dynamic filters and location-based visuals.
@@ -174,7 +176,7 @@ df['availability 365'].value_counts().sort_index()
 
 ---
 
-## 5. Final Conclusion
+## 6. Final Conclusion
 
 This project demonstrates how Airbnb data can be transformed through Python and visualized with Tableau to reveal valuable market insights. By exploring pricing patterns, review behaviors, and listing availability, we help users better understand how location and room type affect performance.
 
